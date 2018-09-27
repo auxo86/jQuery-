@@ -13,5 +13,10 @@ namespace jQuery練習.Controllers
         {
             return View();
         }
+
+        public ActionResult SelectorDemo()
+        {
+            return View();
+        }
     }
 }
