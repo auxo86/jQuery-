@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <input type="text" id="text1" value="" />
+        <input type="button" id="button1" value="click" />
+    </div>
+    <script>
+        $(function () {
+            $("#button1").click(function () {
+                alert("Hi, " + $("#text1").val());
+            });
+        });
+
+    </script>
+</body>
+</html>
