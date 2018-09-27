@@ -17,12 +17,20 @@
         <input type="button" id="button1" value="click" />
     </div>
     <script>
+        //都沒寫就是註冊ready事件
         $(function () {
             $("#button1").click(function () {
                 alert("Hi, " + $("#text1").val());
             });
         });
-
+        //上面其實可以寫成下面這樣
+        //$().ready(
+        //    function () {
+        //        $("#button1").click(function () {
+        //            alert("Hi, " + $("#text1").val());
+        //        });
+        //    }
+        //)
     </script>
 </body>
 </html>
