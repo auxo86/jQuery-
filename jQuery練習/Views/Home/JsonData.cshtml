@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JsonData</title>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <script>
+        $(function () {
+            $.ajax({
+                type: "GET",
+                url: "JsonData",
+                data: "id=1&name=mary",
+                success: function (data) {
+                    console.log(data);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

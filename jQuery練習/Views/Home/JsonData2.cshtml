@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JsonData2</title>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <input type="button" value="ajax" id="button1" />
+        <div id="result"></div>
+    </div>
+    <script>
+        $(function () {
+            $("#button1").click(function () {
+                $.ajax({
+                    type: "GET",
+                    url: "JsonData2",
+                    data: "id=1&name=mary",
+                    success: function (data) {
+                        console.log(data);
+                        $("#result").text(data.EmpName);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
